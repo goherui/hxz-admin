@@ -193,8 +193,8 @@ qiniu:
     use-cdn-domains: false
 redis:
     name: ""
-    addr: 127.0.0.1:6379
-    password: ""
+    addr: 115.190.54.31:6379
+    password: redis_6jBRR2
     db: 0
     useCluster: false
     clusterAddrs:
@@ -203,8 +203,8 @@ redis:
         - 172.21.0.2:7002
 redis-list:
     - name: cache
-      addr: 127.0.0.1:6379
-      password: ""
+      addr: 115.190.54.31:6379
+      password: redis_6jBRR2
       db: 0
       useCluster: false
       clusterAddrs:
@@ -226,7 +226,7 @@ sqlite:
     singular: false
     log-zap: false
 system:
-    db-type: mysql
+    db-type: sqlite
     oss-type: local
     router-prefix: ""
     addr: 8888
