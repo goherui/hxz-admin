@@ -21,7 +21,8 @@ function dynamicImport(dynamicViewsModules, component) {
   const keys = Object.keys(dynamicViewsModules)
   const matchKeys = keys.filter((key) => {
     const k = key.replace('../', '')
-    return k === component
+    // 支持带 .vue 后缀和不带 .vue 后缀的匹配
+    return k === component || k === component + '.vue'
   })
   const matchKey = matchKeys[0]
 
